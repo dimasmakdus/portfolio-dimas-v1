@@ -9,13 +9,13 @@ import { Analytics } from "@vercel/analytics/react"
 import 'react-toastify/dist/ReactToastify.css'
 function App() {
   return (
-    <>
+    <React.Fragment>
       <GlobalStyle></GlobalStyle>
       <Header></Header>
       <Main></Main>
       <Analytics />
       <Footer></Footer>
-    </>
+    </React.Fragment>
   )
 }
 
