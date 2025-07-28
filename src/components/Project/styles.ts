@@ -84,15 +84,21 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 960px){
+  @media (max-width: 1024px){
     .projects{
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media (max-width: 740px){
+  @media (max-width: 768px){
     .projects{
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px){
+    .projects{
+      padding: 0rem;
     }
   }
 `
