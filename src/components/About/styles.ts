@@ -48,13 +48,13 @@ export const Container = styled.section`
   .about-image{
     text-align: center;
    img{
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     margin-top: 2rem;
     width: 75%;
     filter: grayscale(0);
     transition: filter 0.5s;
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
     object-fit: cover;
     &:hover{
       filter: grayscale(0);

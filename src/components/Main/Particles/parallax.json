@@ -33,10 +33,6 @@
   "interactivity": {
     "detectsOn": "window",
     "events": {
-      "onClick": {
-        "enable": true,
-        "mode": "push"
-      },
       "onDiv": {
         "selectors": [],
         "enable": false,
@@ -49,7 +45,7 @@
         "parallax": {
           "enable": true,
           "force": 60,
-          "smooth": 10
+          "smooth": 20
         }
       },
       "resize": {

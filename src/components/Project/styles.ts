@@ -64,6 +64,12 @@ export const Container = styled.section`
         }
       }
 
+      .image-project {
+        max-width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
       footer{
         margin-top: auto;
         .tech-list{

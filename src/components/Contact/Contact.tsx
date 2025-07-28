@@ -16,8 +16,7 @@ export function Contact(){
       <div className="contacts">
         <div>
         <a href={`mailto:${contact.email}`}>
-          {/* <img src={emailIcon} alt="Email" /> */}
-          {/* <MdOutlineEmail /> */}
+          <img src={emailIcon} alt="Email" />
         </a> 
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
         </div>
