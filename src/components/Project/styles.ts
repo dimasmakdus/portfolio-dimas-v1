@@ -98,7 +98,11 @@ export const Container = styled.section`
 
   @media (max-width: 768px){
     .projects{
-      padding: 0rem;
+      display: block;
+      
+      .project {
+        margin-bottom: 20px
+      }
     }
   }
 `
