@@ -10,7 +10,7 @@ const project = [
       "Typescript",
       "ReactJS",
       "AdonisJS",
-      "PostgreSQL"
+      "PostgreSQL",
     ]
   },
   {
