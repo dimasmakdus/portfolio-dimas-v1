@@ -23,6 +23,16 @@ export const GlobalStyle: any = createGlobalStyle`
         color: var(--black);
       }
 
+      .project{
+        background-color: #ffffffff;
+        color: var(--black);
+        &:hover{
+          transform: translateY(-5px);
+          background-color: var(--pink);
+          color: var(--white);
+        }
+      }
+
       header.header-fixed{
         transition: 0.5s;
         background-color: #f5f5f550;

@@ -50,7 +50,7 @@ export function Form() {
       <h2>Get in touch using the form</h2>
       <form onSubmit={handleSubmit}>
         <input
-          placeholder="Nama Lengkap"
+          placeholder="Full Name"
           id="name"
           type="name"
           name="name"
