@@ -24,6 +24,7 @@ export const Container = styled.section`
       transition: 0.25s;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
       height: 100%;
       color: #FFF;
       &:hover{
@@ -78,6 +79,7 @@ export const Container = styled.section`
           gap: 2rem;
           font-size: 1.4rem;
           opacity: 0.6;
+          overflow: auto;
         }
       }
 
@@ -96,7 +98,7 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 425px){
     .projects{
       display: block;
       

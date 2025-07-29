@@ -100,7 +100,7 @@ export const Container = styled.header`
     cursor: pointer;
     text-indent: -9999px;
     width: 55px;
-    height: 30px;
+    height: 32px;
     background: var(--primary);
     display: block;
     justify-content: center;
@@ -130,11 +130,11 @@ export const Container = styled.header`
     position: absolute;
     top: 5px;
     left: 4px;
-   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   }
 
   input:checked + label {
-    background: var(--pink);
+    background: var(--primary);
   }
 
   input:checked + label:after {
