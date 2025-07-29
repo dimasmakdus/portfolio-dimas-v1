@@ -4,11 +4,13 @@ import { toast, ToastContainer } from 'react-toastify'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react'
 import validator from 'validator'
+import { APP_CAPTCHA_SITE_KEY } from '../../config/app'
 
 export function Form() {
-  const [state, handleSubmit] = useForm('xknkpqry')
+  const [state, handleSubmit] = useForm('mqalbwal')
   const [validEmail, setValidEmail] = useState(false)
   const [isHuman, setIsHuman] = useState(false)
+  const [fullName, setFullName] = useState('')
   const [message, setMessage] = useState('')
   function verifyEmail(email: string) {
     if (validator.isEmail(email)) {
@@ -48,6 +50,17 @@ export function Form() {
       <h2>Get in touch using the form</h2>
       <form onSubmit={handleSubmit}>
         <input
+          placeholder="Nama Lengkap"
+          id="name"
+          type="name"
+          name="name"
+          onChange={(e) => {
+            setFullName(e.target.value)
+          }}
+          required
+        />
+        <ValidationError prefix="Nama Lengkap" field="name" errors={state.errors} />
+        <input
           placeholder="Email"
           id="email"
           type="email"
@@ -73,14 +86,14 @@ export function Form() {
           errors={state.errors}
         />
         <ReCAPTCHA
-          sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
+          sitekey={APP_CAPTCHA_SITE_KEY}
           onChange={(e) => {
             setIsHuman(true)
           }}
         ></ReCAPTCHA>
         <button
           type="submit"
-          disabled={state.submitting || !validEmail || !message || !isHuman}
+          disabled={state.submitting || !fullName || !validEmail || !message || !isHuman}
         >
           Submit
         </button>

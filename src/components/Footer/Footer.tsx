@@ -7,12 +7,13 @@ import telegram from '../../assets/telegram.svg'
 import instagramIcon from '../../assets/instagram.svg'
 
 import social from "../../data/social"
+import { APP_DOMAIN, APP_URL } from '../../config/app'
 
 export function Footer() {
   return (
     <Container className="footer">
-      <a href="https://dimasmakdus.id" className="logo">
-        <span>dimasmakdus.id</span>
+      <a href={APP_URL} className="logo">
+        <span>{APP_DOMAIN}</span>
       </a>
       <div>
         <p>

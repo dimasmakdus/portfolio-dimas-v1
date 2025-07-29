@@ -21,11 +21,11 @@ export function Contact(){
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
         </div>
         <div>
-        <a href="tel:+919630576848"><img src={phoneIcon} alt="Phone No" /></a>
-          <a href="tel:+919630576848">{contact.phone}</a>
+        <a href={`tel:${contact.phone_code}`}><img src={phoneIcon} alt="Phone No" /></a>
+          <a href={`tel:${contact.phone_code}`}>{contact.phone}</a>
         </div>  
       </div>
-      {/* <Form></Form> */}
+      <Form></Form>
     </Container>
   )
 }

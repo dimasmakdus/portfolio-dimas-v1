@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import Resume from '../../assets/Dimas_Mohammad_Makdus_Resume.pdf'
+import { APP_USER_FULLNAME } from '../../config/app'
 export function Header() {
   const [isActive, setActive] = useState(false)
   function toggleTheme() {
@@ -16,8 +17,7 @@ export function Header() {
     <Container className="header-fixed">
       <Router>
         <HashLink smooth to="#home" className="logo">
-          <span>{"<Dimas Mohammad "}</span>
-          <span>{" Makdus />"}</span>
+          <span>{`<${APP_USER_FULLNAME} />`}</span>
         </HashLink>
         <input
           onChange={toggleTheme}

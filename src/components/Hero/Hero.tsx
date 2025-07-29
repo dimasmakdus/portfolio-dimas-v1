@@ -10,6 +10,7 @@ import Hello from '../../assets/Hello.gif'
 import telegram from '../../assets/telegram.svg'
 
 import social from "../../data/social"
+import { APP_USER_FULLNAME } from "../../config/app"
 
 export function Hero() {
   return (
@@ -19,7 +20,7 @@ export function Hero() {
           <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Dimas Mohammad Makdus</h1>
+          <h1>{APP_USER_FULLNAME}</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
           <h3>Full Stack Developer</h3>
