@@ -32,10 +32,11 @@ const project = [
     image: airnavProject,
     content: `Development of a microservices-based correspondence archive in the AIRNAV E-Office application using Ant Design, Typescript, NextJS, ExpressJS, the Sequelize ORM, and a PostgreSQL database.`,
     tag: [
+      "Ant Design",
       "NextJS",
       "Typescript",
-      "ORM Sequelize",
-      "Ant Design"
+      "Express",
+      "Sequelize ORM",
     ]
   },
   {
@@ -71,7 +72,7 @@ const project = [
     content: `Developing an E-Procurement System for PT. Trans-Pacific Petrochemical Indotama using .NET Core and SQL Server.`,
     tag: [
       "C#",
-      ".NET Code",
+      "ASP.NET Core",
       "SQL Server"
     ]
   },
@@ -95,8 +96,8 @@ const project = [
     content: `Developed a Vendor Management System (VMS) for PT. Interport Mandiri Utama using microservices, with front-end technology using ReactJS, and back-end API services using Laravel, Azure, and PostgreSQL.`,
     tag: [
       "ReactJS",
+      "Laravel",
       "PostgreSQL",
-      "Laravel"
     ]
   },
   {
@@ -120,6 +121,7 @@ const project = [
     tag: [
       "NodeJS",
       "NATS",
+      "Docker",
       "API Gateway"
     ]
   },
