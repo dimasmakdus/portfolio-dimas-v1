@@ -22,12 +22,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi! I'm Dimas, an enthusiastic Full Stack Developer and expert in web development, working on various projects involving front-end and back-end development for various clients and industries.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-          <p>
-            I create responsive designs, optimize website performance, manage servers, ensure client and server security, and create APIs for various web and mobile clients.
+            Hi! I'm Dimas, an enthusiastic Full Stack Developer with experience in delivering Front-end and Back-end solutions for diverse industries. My expertise includes building APIs for web and mobile applications, implementing responsive designs, optimizing system performance, and managing secure server–client environments. I also specialize in software architecture and design principles (such as SOLID and Clean Architecture), ensuring that the applications I build are scalable, well-structured, and maintainable.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={400}>
